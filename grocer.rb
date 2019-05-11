@@ -41,6 +41,7 @@ end
 
 
 def apply_clearance(cart)
+  new_cart = {} 
   cart.each do |items, info|
     if items[:clearance] 
       cart 
