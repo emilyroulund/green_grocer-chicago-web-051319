@@ -50,6 +50,13 @@ def apply_clearance(cart)
   new_cart
 end
 
+
+#apply coupon discounts if proper number of items are present
+#apply 20% if on clearance
+# if cart is over $100 apply 10% discount 
+
 def checkout(cart, coupons)
+  apply_coupons(cart)
+  apply_clearance(cart)
   
 end
