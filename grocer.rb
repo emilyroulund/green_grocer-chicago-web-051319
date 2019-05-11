@@ -56,7 +56,7 @@ end
 # if cart is over $100 apply 10% discount 
 
 def checkout(cart, coupons)
-  consolidate_cart(cart)
+  new_cart = consolidate_cart(cart)
   apply_coupons(new_cart, coupons)
   apply_clearance(new_cart)
   total = 0 
