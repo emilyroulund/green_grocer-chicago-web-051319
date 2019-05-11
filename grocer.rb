@@ -16,13 +16,13 @@ end
 
 def apply_coupons(cart, coupons)
  return cart if coupons == []
+ new_cart = cart 
+ coupons.each do |coupon|
+   name = coupon[:item]
+   number = coupon[:num]
+   #does cart have same item in coupon, but larger amount that coupon? i.e. is cart[avocado][:count] > number 
 end
 
-
-  #set new_cart = cart so we don't have to push all the values, just change them
-  new_cart = cart
-
-  coupons.each do |coupon|
     name = coupon[:item] #avocado, cheese,...
     num_of_c = coupon[:num]
     #if the cart has the same item in coupon and has larger amount than in coupon
