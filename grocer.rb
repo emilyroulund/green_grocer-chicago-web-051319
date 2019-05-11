@@ -27,7 +27,7 @@ def apply_coupons(cart, coupons)
      new_cart["#{name} W/COUPON"][:count] += 1 #INCREASE COUNT WHEN MORE ITEMS THAN coupons 
    else 
      new_cart["#{name} W/COUPON"] = {
-       :price =coupon[:cost],
+       :price => coupon[:cost],
        :clearance => new_cart[name][:clearance],
        :count => 1 
      }
